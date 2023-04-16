@@ -1,15 +1,17 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <GameScreen msg="Welcome to Network Defender"/>
+  <LevelOne/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GameScreen from './components/GameScreen.vue'
+import LevelOne from './components/LevelOne.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GameScreen, LevelOne
   }
 }
 </script>
