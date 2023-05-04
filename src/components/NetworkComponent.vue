@@ -20,5 +20,6 @@ export default {
   border: 3px solid rgb(133, 206, 169);
   padding: 10px;
   padding-top: 10px;
+  z-index: 900 !important;
 }
 </style>

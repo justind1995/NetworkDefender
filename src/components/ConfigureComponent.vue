@@ -1,6 +1,6 @@
 <template>
   <div class="modal-backdrop">
-    <div class="modal">
+    <div class="configureModal">
       <header class="modal-header">
         <slot name="header">
           This is the default title!
@@ -94,6 +94,7 @@
   .modal-body {
     position: relative;
     padding: 20px 10px;
+    z-index: 950 !important;
   }
 
   .btn-close {

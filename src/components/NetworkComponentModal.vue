@@ -27,11 +27,17 @@
         </slot>
        </section>
 
+      <section class="modal-body">
+        <slot name="body3">
+          This is the default body!
+        </slot>
+       </section>
+
       <footer class="modal-footer">
         <button
           type="button"
           class="btn-green"
-          @click="close"
+          @click="emitSubmission"
         >
           Submit
         </button>
@@ -47,8 +53,14 @@
       close() {
         this.$emit('close');
       },
+      emitSubmission(){
+        console.log('emitting submission')
+        this.$emit('submission')
+      }
     },
   };
+
+  
 </script>
 
 <style>
