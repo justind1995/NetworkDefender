@@ -19,24 +19,13 @@
         </slot>
        </section>
 
-
-      <section class="modal-body">
-        <slot name="body2">
-        </slot>
-       </section>
-
-      <section class="modal-body">
-        <slot name="body3">
-        </slot>
-       </section>
-
       <footer class="modal-footer">
         <button
           type="button"
           class="btn-green"
-          @click="emitSubmission"
+          @click="emitLevelChange"
         >
-          Submit
+          Next Level
         </button>
       </footer>
     </div>
@@ -45,14 +34,14 @@
 
 <script>
   export default {
-    name: 'NetworkComponentModal',
+    name: 'ResultsModal',
     methods: {
       close() {
         this.$emit('close');
       },
-      emitSubmission(){
-        console.log('emitting submission')
-        this.$emit('submission')
+      emitLevelChange(){
+        console.log('emitting level change')
+        this.$emit('levelchange')
       }
     },
   };
@@ -116,5 +105,12 @@
     font-weight: bold;
     color: #4AAE9B;
     background: transparent;
+  }
+
+  .btn-green {
+    color: white;
+    background: #4AAE9B;
+    border: 1px solid #4AAE9B;
+    border-radius: 2px;
   }
 </style>
