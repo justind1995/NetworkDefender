@@ -2,6 +2,8 @@
 
 ## Project setup
 
+Git Repo: https://github.com/justind1995/NetworkDefender
+
 Please ensure that you have node.js install on your machine. It can be installed here: 
 
 ```
