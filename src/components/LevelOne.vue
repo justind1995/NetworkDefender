@@ -153,13 +153,13 @@
 
   <!-- Servers 4 -->
   <netComp v-if="level3" v-show="isBoardVisible"
-  class="server1-lvl3" positionStr="server1" id="server1"/>
+  class="server1-lvl3" positionStr="Server1" id="Server1"/>
   <netComp v-if="level3" v-show="isBoardVisible"
-  class="server2-lvl3" positionStr="server2" id="server2"/>
+  class="server2-lvl3" positionStr="Server2" id="Server2"/>
   <netComp v-if="level3" v-show="isBoardVisible"
-  class="server3-lvl3" positionStr="server3" id="server3"/>
+  class="server3-lvl3" positionStr="Server3" id="Server3"/>
   <netComp v-if="level3" v-show="isBoardVisible"
-  class="server4-lvl3" positionStr="server4" id="server4"/>
+  class="server4-lvl3" positionStr="Server4" id="Server4"/>
 <!-- <connectingLine class=""/> -->
 </template>
 
