@@ -15,9 +15,19 @@ I am running version:
 v18.16.0
 ```
 
+**To run locally**, first
+
 ```
 npm install
 ```
+
+Then, do the following 
+
+``` 
+npm run serve
+```
+
+A message should appear saying that the app is running at localhost:8080
 
 ### Compiles and hot-reloads for development
 ```
